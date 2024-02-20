@@ -1,0 +1,38 @@
+:root {
+    --game-width: 640px;
+    --game-height: 480px;
+    --chat-width: var(--game-width);
+    --chat-height: 9.2em;
+    --chat-font-default: 1em 'Segoe UI';
+    --chat-font-monospace: 700 1.1em  'Consolas';
+    --chat-padding: 5px;
+    box-sizing: border-box;
+}
+
+canvas#game {
+    /* width: var(--game-width);
+    height: var(--game-height); */
+    border: 1px solid silver;
+}
+
+.chat.window {
+    font: var(--chat-font-default);
+    width: calc(var(--chat-width) - var(--chat-padding) * 2);
+    height: var(--chat-height);
+    border: 1px solid lightblue;
+    padding: 0 var(--chat-padding) 0;
+    margin-bottom: 5px;
+    overflow-y: scroll;
+}
+
+.chat div span {
+    font: var(--chat-font-monospace);
+}
+
+.chat.motd {
+    font: var(--chat-font-monospace);
+}
+
+.chat.input {
+    width: calc(var(--game-width) - 2px);
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="client/css/style.css">
+    <title>Game</title>
+</head>
+<body>
+    <canvas id="game" width="640px" height="480px"></canvas>
+    <div id="chat" class="chat">
+        <div id="chat-window" class="chat window">
+            <div class="chat motd">Bienvenue sur le serveur</div>
+        </div>
+        <form id="chat-form" action="" method="get">
+            <input type="text" name="chat-input" id="chat-input" class="chat input">
+        </form>
+    </div>
+    <!-- Javascript files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="client/js/client.js"></script>
+</body>
+</html>
